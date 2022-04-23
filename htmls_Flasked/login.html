@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block title %}Login{% endblock %}
+{% block page %}Login{% endblock %}
+
+{{ super() }}
+
+{% block content %}
+
+<div class="header">
+    <img src="logo3.png" width="100px">
+</div>
+<div class="row">
+    <div class="login1"></div>
+    <div class="login">
+    <form class="col s12 m8 offset-m2" method="POST" action="/login">
+        {{ form.csrf_token }}
+
+        <div class="input-field col s12 m8 offset-m2">
+            {{ form.username(size=20, class="validate") }}
+            {{ form.username.label }}
+        </div>
+
+        <div class="input-field col s12 m8 offset-m2">
+            {{ form.password(size=20, class="validate") }}
+            {{ form.password.label }}
+        </div>
+
+        <div class="input-field col s12 m8 offset-m2">
+            {{form.submit}}
+         </div> 
+        
+    </form>
+    
+    </div>
+</div>
+
+
+{% endblock %}
+
+

@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div.header{
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-bottom: 13px;
+    text-align: left;
+    background: #000080;
+    color: white;
+    font-size: 20px;
+    width: auto;
+    height: 50px;
+}
+
+div.home{
+    width: 100%;
+    height: 90.35%;
+    background-image: url(https://media.tegna-media.com/assets/WVEC/images/34af2191-3ac8-4b97-8631-bbeb6425d04e/34af2191-3ac8-4b97-8631-bbeb6425d04e_1140x641.jpeg);
+    position: fixed;
+    background-size: cover;
+    background-position: center;
+    content: " ";
+    margin-left: 0px;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+div.land{
+    width : 100%;
+    height: auto;
+    background-color: #ffffff;
+    margin-top: 550px;
+}
+
+div.dashboard{
+    width: 1250px;
+    margin-top: 60px;
+    margin-left: 2.5%;
+    border-radius: 30px;
+    height: auto;
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #034583;
+    margin-bottom: 60px;
+}
+
+div.dash{
+    width: 250px;
+    height: 300px;
+    background-color: #313131;
+    padding: 50px;
+    border-radius: 80px;
+    align-items: center;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+div.dash img{
+    width: 80%;
+    height: 50%;
+}
+
+div.dash h1{
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+div.dash button{
+    margin-top: 20px;
+    width: 50%;
+    height: 10%;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 786px){
+    div.header{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    div.land{
+        width : 100%;
+        height: auto;
+        background-color: transparent;
+        margin-top: 50px;
+    }
+
+    div.dashboard{
+        width: 100%;
+        margin-top: 60px;
+        margin-left:-5%;
+        border-radius: 30px;
+        height: auto;
+        display: block;
+        justify-content: space-around;
+        padding: 50px;
+        background-color: transparent;
+        margin-bottom: 60px;
+    }
+
+    div.dash{
+        width: 200px;
+        height: 300px;
+        background-color: #313131;
+        padding: 50px;
+        border-radius: 80px;
+        align-items: center;
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+
+}
+

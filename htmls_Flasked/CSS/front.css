@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+
+div.header{
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-bottom: 13px;
+    text-align: left;
+    background: #000080;
+    color: white;
+    font-size: 20px;
+    width: auto;
+    height: 50px;
+}
+
+div.middle{
+    width: 100%;
+    height: 75%;
+    background-image: url(https://www.cityuniversity.ca/wp-content/uploads/2021/12/iStock-908952856-1024x683.jpg);        
+    margin-top: 0px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px none;
+}
+
+div.info{
+    width: 500px;
+    height: 150px;
+    padding: 20px;
+    margin-top: 200px;
+    margin-left: 10%;
+    border-radius: 20px;
+    backdrop-filter: blur(0px);
+}
+
+p.words{
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: left;
+}
+
+button{
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    margin-left: 300px;
+    font-size: large;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: black;
+}
+
+div.footer{
+    width: 100%;
+    height: 115px;
+    background-color: black;
+    margin-top: 35%;
+    padding: 10px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px none;
+}
+
+div.footer p{
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+@media only screen and (max-width: 786px){
+    div.header{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    div.middle{
+        width: 100%;
+        height: 75%;
+        background-image: url(https://www.cityuniversity.ca/wp-content/uploads/2021/12/iStock-908952856-1024x683.jpg); 
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+    }
+
+    div.info{
+        width: auto;
+        height: auto;
+        margin-left: 10px;
+        margin-top: 150px;
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+    }
+
+    p.words{
+        font-size: small;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        text-align: left;
+    }
+
+    button{
+        border-radius: 5px;
+        width: 150px;
+        height: 30px;
+        margin-left: 10px;
+        font-size: small;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: black;
+    }
+
+    div.footer{
+        width: 100%;
+        height: 120px;
+        background-color: black;
+        margin-top: 125%;
+        padding: 10px;
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        box-sizing: border-box;
+        box-shadow: 0 0 0px none;
+    }
+    
+    div.footer p{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: small;
+    }
+
+}

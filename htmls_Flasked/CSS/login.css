@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div.header{
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-bottom: 13px;
+    text-align: left;
+    background: #000080;
+    color: white;
+    font-size: 20px;
+    width: auto;
+    height: 50px;
+}
+
+div.login{
+    width: 30%;
+    height: 90.35%;
+    background-color: black;
+    margin-left: 70%;
+    margin-top: 0px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px none;
+    padding-left: 100px;
+    padding-top: 150px;
+}
+
+div.login1{
+    width: 70%;
+    height: 90.35%;
+    background-image: url(https://cdn.abcotvs.com/dip/images/6137667_042820-kfsn-graduation-img.jpg?w=1600);
+    background-size: cover;
+    background-position: center;
+    content: " ";
+    position: absolute;
+    margin: 0px;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 none;
+    padding: 20%;
+}
+
+div.input{
+    padding: 5px;
+}
+
+div.input p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: #ffffff;
+}
+
+div.input input{
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+button.log{
+    margin-left: 190px;
+    margin-top: 5px;
+    width: 70px;
+    height: 30px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: white;
+}
+
+div.sig p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: #ffffff;
+}
+
+button.sign{
+    width: 70px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    background-color: #ffffff;
+}
+
+
+@media only screen and (max-width: 786px){
+    div.header{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    div.login{
+        width: 30%;
+        height: 90.35%;
+        background-color: transparent;
+        margin-left: 0px;
+        margin-top: 0px;
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        box-sizing: border-box;
+        box-shadow: none;
+        padding-left: 40px;
+        padding-top: 100px;
+    }
+    
+    div.login1{
+        width: 100%;
+        height: 100%;
+        background-image: url(https://cdn.abcotvs.com/dip/images/6137667_042820-kfsn-graduation-img.jpg?w=1600);
+        background-size: initial;
+        background-position: center;
+        content: " ";
+        position: fixed;
+        margin: 0px;
+        box-sizing: border-box;
+        box-shadow: 0 0 0 none;
+        padding: 20%;
+    }
+
+    div.input p{
+        color: black;
+        font-weight: bold;
+    }
+
+    button.log{
+        margin-left: 190px;
+        margin-top: 10px;
+        width: 70px;
+        height: 30px;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        background-color: white;
+    }
+
+    div.sig{
+        width: 300px;
+        margin-top: 140px;
+    }
+    
+    div.sig p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        color: black;
+        font-weight: bolder;
+    }
+    
+    button.sign{
+        width: 70px;
+        height: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        background-color: #ffffff;
+    }
+
+}

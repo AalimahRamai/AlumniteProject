@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+{% block title %}Alumnite Job Board{% endblock %}
+{% block page %}Alumninte{% endblock %}
+
+{{ super() }}
+
+{% block content %}
+{% if current_user.is_authenticated %}
+
+<div class="header">
+    <img src="logo3.png" width="100px">
+</div>
+<div class="sideNav">
+    <a class="active" href="/jobBoard">Job Board</a>
+    <a href="/event">Events</a>
+    <a href="#">Profile</a>
+</div>
+<div class="portal">
+    <div class="board">
+        <div id="jobs">
+            <!--<div class="job">
+                    <p>Job Title: </p>
+                    <p>Job Type: </p>
+                    <p>Category: </p>
+                    <p>Company: </p>
+                    <p>Salary: </p>
+                    <p>Location: </p>
+                    <p>Website: </p>   
+                </div>
+                <br>-->        
+        </div>
+        <script>
+            const api_url = 'https://remotive.com/api/remote-jobs?limit=120';
+            async function getData(){
+                const response = await fetch(api_url);  
+                const data = await response.json();
+
+                let i = 0;
+                let data1="";
+                while(i<120){
+                    data1+=`<div class="job">
+                                <p>Job Title: ${data.jobs[i].title}</p>
+                                <p>Job Type: ${data.jobs[i].job_type}</p>
+                                <p>Category: ${data.jobs[i].category}</p>
+                                <p>Company: ${data.jobs[i].company_name}</p>
+                                <p>Salary: ${data.jobs[i].salary}</p>
+                                <p>Location: ${data.jobs[i].candidate_required_location}</p>
+                                <p>Website: ${data.jobs[i].url}</p>   
+                            </div>
+                            <br>`;
+                    document.getElementById("jobs").innerHTML=data1;
+                    i++;
+                }
+            }
+            getData();              
+        </script>
+    </div>
+</div>
+
+
+{% endif %}
+
+{% endblock %}

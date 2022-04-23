@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+{% block title %}Alumnite Event{% endblock %}
+{% block page %}Alumninte{% endblock %}
+
+{{ super() }}
+
+{% block content %}
+{% if current_user.is_authenticated %}
+
+<div class="header">
+    <img src="logo3.png" width="100px">
+</div>
+<div class="sideNav">
+    <a href="/jobBoard">Job Board</a>
+    <a class="active" href="/event">Events</a>
+    <a href="#">Profile</a>
+</div>
+<div class="events">
+    <div class="eventslides">
+        <img src="e1.jpg" style="width: 100%;">
+    </div>
+    <div class="eventslides">
+        <img src="e2.jpg" style="width: 100%;">
+    </div>
+    <div class="eventslides">
+        <img src="e3.jpg" style="width: 100%;">
+    </div>
+    <div class="eventslides">
+        <img src="e4.jpg" style="width: 100%;">
+    </div>
+    <div class="eventslides">
+        <img src="e5.jpg" style="width: 100%;">
+    </div>
+    <div class="eventslides">
+        <img src="info.JPG" style="width: 100%;">
+    </div>
+
+    <a class="prev" onclick="plusEvents(-1)">&#10094;</a>
+    <a class="next" onclick="plusEvents(1)">&#10095;</a>
+
+    <br>        
+    <div style="text-align:center">
+        <span class="dot" onclick="currentEvent(1)"></span> 
+        <span class="dot" onclick="currentEvent(2)"></span> 
+        <span class="dot" onclick="currentEvent(3)"></span> 
+        <span class="dot" onclick="currentEvent(4)"></span> 
+        <span class="dot" onclick="currentEvent(5)"></span> 
+        <span class="dot" onclick="currentEvent(6)"></span> 
+    </div>
+</div>
+
+</header>
+
+<script>
+let slide = 1;
+showEvents(slide);
+
+function plusEvents(n){
+    showEvents(slide += n);
+}
+
+function currentEvent(n){
+    showEvents(slide = n);
+}
+
+function showEvents(n){
+    let i;
+    let slides = document.getElementsByClassName("eventslides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length){
+        slide = 1;
+    }
+    if (n < 1){
+        slide = slides.length;
+    }
+    for (i = 0; i < slides.length; i++){
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++){
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slide-1].style.display = "block";
+    dots[slide-1].className += " active";
+}
+
+</script>
+
+{% endif %}
+
+{% endblock %}
+
